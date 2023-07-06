@@ -1,0 +1,131 @@
+# Visual Studio 2022
+
+## Project Files ##
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcproj
+*.vcproj.filters
+*.vcproj.user
+*.xcodeproj
+*.xcworkspace
+
+## Compiled Object Files ##
+*.suo
+*.obj
+*.exe
+*.dll
+*.pdb
+*.ipch/
+*.aps
+*.clw
+*.tlb
+*.tlh
+*.ncb
+*.res
+*.idb
+*.pch
+*.obj
+*.bsc
+*.ilk
+*.lib
+*.exp
+*.manifest
+*.map
+*.ilk
+*.log
+*.bsc
+
+## Compiled Dynamic Libraries ##
+*.so
+*.dylib
+*.dll
+*.jar
+
+## Compiled Static Libraries ##
+*.a
+*.lib
+
+## Executables ##
+*.exe
+*.com
+*.out
+*.app
+
+## Debug files ##
+*.dSYM/
+
+## Environment ##
+/.env
+/.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+## Visual Studio Code ##
+.vscode/
+
+## macOS ##
+.DS_Store
+
+## Node.js ##
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+## TypeScript ##
+*.tsbuildinfo
+*.ts
+
+## Flutter ##
+/.metadata
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins-dev-dependencies
+.packages
+.pub-cache/
+build/
+
+## Android ##
+**/android/
+**/android/**/.gradle
+**/android/**/gradle-wrapper.jar
+**/android/**/local.properties
+**/android/.idea
+**/android/.gradle
+
+## Gradle ##
+.gradle
+.gradle/
+.gradle/
+
+## IntelliJ IDEA ##
+.idea/
+*.iml
+
+## Eclipse ##
+.classpath
+.project
+.settings/
+
+## Xcode ##
+**/*.pbxproj
+**/*.xcworkspace
+**/*.xcuserstate
+**/*.xcscmblueprint
+
+## Visual Studio ##
+.vs/
+
+## Other ##
+*.log
+*.tmp
+*.bak
+*.cache
+*.tmp
+*.swp
