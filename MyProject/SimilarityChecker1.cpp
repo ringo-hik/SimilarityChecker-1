@@ -1,14 +1,17 @@
 #include <string>
 
-class StringChecker {
+class LengthCalculator {
 public:
-    double checkStringLength(const std::string& strA, const std::string& strB) {
-        double lenA = static_cast<double>(strA.length());
-        double lenB = static_cast<double>(strB.length());
-        double gab = std::abs(lenA - lenB);
-        double maxLen = std::max(lenA, lenB);
+    int calculateLengthDiff(const std::string& str1, const std::string& str2) {
+        return calScore(str1.length(), str2.length());
+    }
 
-        double score = (1 - (gab / maxLen)) * 60.0;
-        return score;
+private:
+    const int MAX_LENGTH_SCORE = 60;
+    int calScore(int len1, int len2) {
+        if (len1 > len2)
+            return (int)((double)(len1 - len2) / len1 * MAX_LENGTH_SCORE);
+
+        return (int)((double)(len2 - len1) / len2 * MAX_LENGTH_SCORE);
     }
 };

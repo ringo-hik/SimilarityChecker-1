@@ -1,22 +1,24 @@
 #include "pch.h"
 #include "../MyProject/SimilarityChecker1.cpp"
 
-TEST(StringCheckerTest, SameLength) {
-    StringChecker checker;
-    std::string strA = "Hello";
-    std::string strB = "World";
-    double expectedScore = 60.0;
+using namespace std;
 
-    double score = checker.checkStringLength(strA, strB);
-    EXPECT_DOUBLE_EQ(score, expectedScore);
+TEST(StringCheckerTest, SameLength) {
+	LengthCalculator testunit{};
+	string a = "AAACC";
+	string b = "AAACA";
+
+	int expected = 60;
+
+	EXPECT_EQ(expected, testunit.calculateLengthDiff(a, b));
 }
 
-TEST(StringCheckerTest, DifferentLength) {
-    StringChecker checker;
-    std::string strA = "OpenAI";
-    std::string strB = "GPT-3";
-    double expectedScore = 26.25;
+TEST(StringCheckerTest, DiffLength) {
+	LengthCalculator testunit{};
+	string a = "AA";
+	string b = "BBB";
 
-    double score = checker.checkStringLength(strA, strB);
-    EXPECT_DOUBLE_EQ(score, expectedScore);
+	int expected = 40;
+
+	EXPECT_EQ(expected, testunit.calculateLengthDiff(a, b));
 }
